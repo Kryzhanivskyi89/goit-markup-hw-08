@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #212121;
+    --secondary-color: #757575;
+    --logo-color: hwb(207 13% 5%);
+    --footer-color: #2F303A;
+    --adresa-color: #FFFFFF;
+    --contact-color: rgba(255, 255, 255, 0.6);
+    --studio-color: #000000;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-color);
+}

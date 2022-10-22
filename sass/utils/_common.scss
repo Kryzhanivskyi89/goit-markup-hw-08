@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+        @media screen and (min-width: 1200px) {
+            padding-top: 96px;
+            padding-bottom: 96px;
+        }
+}
+
+.container {
+    width: 480px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+        @media screen and (min-width: 768px) {
+            width: 768px;
+                
+        }
+        @media screen and (min-width: 1200px) {
+            width: 1200px;
+            
+        }
+}
+
+.list {
+    list-style: none;
+}
+
+.links:hover,
+.links:focus {
+    color: var(--logo-color);
+
+}

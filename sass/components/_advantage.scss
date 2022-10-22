@@ -1,0 +1,81 @@
+.advantage {
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 768px;
+    }    
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            margin: 0px;
+    }
+    
+        
+}
+.advantage__items {
+    @media screen and (min-width: 768px) {
+            flex-basis: calc((100% - 30px) / 2);
+        }
+    &:not(:first-child) {
+            @media screen and (min-width: 1200px) {
+                margin-left: 30px;
+            }
+        }
+    &__uvaha {
+        display: inline-flex;
+        background-image: url(../img/icons/uvaha.svg);
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;    
+    }
+    &__punktualnist {
+        display: inline-flex;
+        background-image: url(../img/icons/punkt.svg);
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    &__planuvannya {
+        display: inline-flex;
+        background-image: url(../img/icons/plan.svg);
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    &__tehnologii {
+        display: inline-flex;
+        background-image: url(../img/icons/tehno.svg);
+        background-color: #F5F4FA;
+        width: 270px;
+        height: 120px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 30px;
+    }
+    &__h3 {
+        color: var(--primary-color);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+    }
+
+}
+
+.section-p {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

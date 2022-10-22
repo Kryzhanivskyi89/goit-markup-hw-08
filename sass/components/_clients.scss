@@ -1,0 +1,45 @@
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: space-around;
+            margin: 0px;
+        }
+    
+}
+
+.clients-links {
+    
+    border: 1px solid #AFB1B8;
+    fill: #AFB1B8;
+    border-radius: 4px;
+    padding: 14px 30px;
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            border-color: var(--logo-color);
+            fill: var(--logo-color);
+        }
+
+     @media screen and (min-width: 768px) {
+                    display: flex;                    
+                    flex-basis: calc((100% - 60px) / 3);
+                }
+        
+    @media screen and (min-width: 1200px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+}
