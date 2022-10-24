@@ -15,44 +15,76 @@
     <body>
         <header class="header">
             <div class="container header__container">
-                <!-- the logo is alwais a link -->
+                <!-- the logo is alwais a link -->                
                 <a href="./index.html" class="logo-web links">Web<span class="logo-studio">studio</span></a>
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
+                        <use class="icon-menu" href="./img/icons.svg#icon-menu_burger"></use>
+                        <use class="icon-cros" href="./img/icons.svg#icon-close_24px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container js-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu"></button>
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu-item"><a href="./index.html" class="mobile_page mobile_page-curent links">Студія</a></li>
+                        <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile_page  links">Портфоліо</a></li>
+                        <li class="mobile-menu-item"><a href="" class="mobile_page  links">Контакти</a></li>
+                    </ul>
+                    <div class="mobile-contact-wraper">
+                        <ul class="list ">
+                            <li class="mobile-contact-item">
+                                <a href="tel:+380961111111" class="mobile-phone links">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mobile-contact-item">
+                                <a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer nofollow"
+                                    class="mobile-mail links">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="mobile-social list">
+                        <li class="mobile-social-item">
+                            <a href="" class="mobile-social-links links">Instagram</a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a href="" class="mobile-social-links links">Twitter</a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a href="" class="mobile-social-links links">Facebook</a>
+                        </li>
+                        <li class="mobile-social-item">
+                            <a href="" class="mobile-social-links links">Linkedin</a>
+                        </li>
+                    </ul>
+                
+                </div>
                 <nav class="header__nav">
                     <ul class="list header__list">
                         <li class="header__item"><a href="./index.html" class="header__page header__page-curent links">Студія</a></li>
                         <li class="header__item"><a href="./portfolio.html" class="header__page  links">Портфоліо</a></li>
                         <li class="header__item"><a href="" class="header__page  links">Контакти</a></li>
                     </ul>
-                    <button type="button" class="menu-button is-open" data-menu-button>
-                        <svg 
-                        width="40px" 
-                        height="40px"
-                        aria-label="перемикач мобільного меню">
-                            <use class="icon-menu" href="./img/icons.svg#icon-menu_burger" ></use>
-                            <use class="icon-cros" href="./img/icons.svg#icon-close_24px"></use>
-                        </svg>
-                    </button>
+                    
                 </nav>
                 <div class="contact-wraper">
-                    <ul class="list header__list">
+                    <ul class="list header__contact">
                         <li>
                             <a href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer nofollow"
-                                class="header__contact links">
+                                class="header__links links">
                                 <svg class="icon-mail" width="16px" height="12px">
                                     <use href="./img/icons.svg#icon-mail"></use>
                                 </svg>info@devstudio.com
                             </a>
                         </li>
                         <li>
-                            <a href="tel:+380961111111" class="header__contact phone links">
+                            <a href="tel:+380961111111" class="header__links phone links">
                                 <svg class="icon-phone" width="10px" height="16px">
                                     <use href="./img/icons.svg#icon-phone"></use>
                                 </svg>+38 096 111 11 11</a>
                         </li>
                     </ul>
-                </div>                
-            </div>            
-
+                </div> 
+                
+            </div>
         </header>
         <main>
             <!-- main hero -->
@@ -181,7 +213,16 @@
                     <h2 class="title">Наша команда</h2>
                     <ul class="list team__list">
                         <li class="team__items">
-                            <img src="./img/igor-demianenko.jpg" alt="Ігор-Демяненко" width="270">
+                            <img srcset="
+                            ./img/igor-demianenko-mob-1x.jpg 1x
+                            ./img/igor-demianenko-mob-2x.jpg 2x
+                            ./img/igor-demianenko-tab-1x.jpg 1x
+                            ./img/igor-demianenko-tab-2x.jpg 2x
+                            ./img/igor-demianenko.jpg 1x, 
+                            ./img/igor-demianenko-desk-2x.jpg 2x"
+                            src="./img/igor-demianenko.jpg" 
+                            alt="Ігор-Демяненко"
+                            width="270px">
                             <div class="team__border">
                                 <h3 class="team__h3">Ігор Демяненко</h3>
                                 <p class="team__p">Product Designer</p>
@@ -218,7 +259,16 @@
                             </div>                            
                         </li>
                         <li class="team__items">
-                            <img src="./img/olga-ryepina.jpg" alt="Ольга-Рєпіна" width="270">
+                            <img srcset="
+                            ./img/olga-ryepina-mob-1x.jpg 1x
+                            ./img/olga-ryepina-mob-2x.jpg 2x
+                            ./img/olga-ryepina-tab-1x.jpg 1x
+                            ./img/olga-ryepina-tab-2x.jpg 2x
+                            ./img/olga-ryepina.jpg 1x, 
+                            ./img/olga-ryepina-desk-2x.jpg 2x"
+                            src="./img/olga-ryepina.jpg" 
+                            alt="Ольга-Рєпіна"
+                            width="270px">                            
                             <div class="team__border">                                
                                 <h3 class="team__h3">Ольга Рєпіна</h3>
                                 <p class="team__p">Frontend Developer</p>
@@ -255,7 +305,16 @@
                             </div>                             
                         </li>
                         <li class="team__items">
-                            <img src="./img/mykola-tarasov.jpg" alt="Микола-Тарасов" width="270">
+                            <img srcset="
+                            ./img/mykola-tarasov-mob-1x.jpg 1x
+                            ./img/mykola-tarasov-mob-2x.jpg 2x
+                            ./img/mykola-tarasov-tab-1x.jpg 1x
+                            ./img/mykola-tarasov-tab-2x.jpg 2x
+                            ./img/mykola-tarasov.jpg 1x, 
+                            ./img/mykola-tarasov-desk-2x.jpg 2x"
+                            src="./img/mykola-tarasov.jpg" 
+                            alt="Микола-Тарасов"
+                            width="270px">
                             <div class="team__border">
                                 <h3 class="team__h3">Микола Тарасов</h3>
                                 <p class="team__p">Marketing</p>
@@ -292,7 +351,16 @@
                             </div>                            
                         </li>
                         <li class="team__items">
-                            <img src="./img/myhailo-yermak.jpg" alt="Михайло-Єрмаков" width="270">
+                            <img srcset="
+                            ./img/myhailo-yermak-mob-1x.jpg 1x
+                            ./img/myhailo-yermak-mob-2x.jpg 2x
+                            ./img/myhailo-yermak-tab-1x.jpg 1x
+                            ./img/myhailo-yermak-tab-2x.jpg 2x
+                            ./img/myhailo-yermak.jpg 1x, 
+                            ./img/myhailo-yermak-desk-2x.jpg 2x"
+                            src="./img/myhailo-yermak.jpg" 
+                            alt="Михайло-Єрмаков"
+                            width="270px">
                             <div class="team__border">
                                 <h3 class="team__h3">Михайло Єрмаков</h3>
                                 <p class="team__p">UI Designer</p>
@@ -448,4 +516,5 @@
        
     </body>
     <script src="./JS/modal.js"></script>
+    <script src="./JS/mobile-menu.js"></script>
 </html>

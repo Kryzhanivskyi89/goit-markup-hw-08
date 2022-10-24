@@ -56,15 +56,11 @@
 }
 
 .subscribe-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    
     width: 200px;
     height: 50px;
-    margin-left: 12px;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0 auto;
     padding: 10px 28px;
     color: var(--adresa-color);
     font-weight: 700;
@@ -78,4 +74,14 @@
     background-color: #188CE8;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12px;
+                margin-right: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                padding: 10px 28px;
+        }
 }

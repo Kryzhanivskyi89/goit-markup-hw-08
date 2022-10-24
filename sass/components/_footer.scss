@@ -1,12 +1,26 @@
 .footer {
     background-color: var(--footer-color);
         &__container {
-            display: flex;
-            align-items: baseline;
+            display: block;
+            margin: 0 auto;
             padding-top: 60px;
             padding-bottom: 60px;
+            @media screen and (min-width: 768px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: baseline;
+                    flex-wrap: wrap;                    
+                }            
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    align-items: baseline;
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+                }
         }
         &__logo {
+            display: block;
+            margin: 0 auto;
             color: var(--logo-color);
             font-size: 26px;
             font-weight: 700;
@@ -14,6 +28,10 @@
             letter-spacing: 0.03em;
             font-family: "Raleway", sans-serif;
             text-decoration: none;
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    justify-content: left;                    
+                }
         }
         &__studio {
             color: var(--adresa-color);
@@ -27,7 +45,14 @@
         &__social {
             width: 206px;
             height: 80px;
-            margin-left: 70px;
+            margin: 0 auto;
+            @media screen and (min-width: 768px) {
+                    margin-left: 165px;
+                }
+            @media screen and (min-width: 1200px) {                    
+                margin-left: 70px;
+                }
+            
         }
         &__list {
             display: flex;
@@ -56,30 +81,52 @@
             color: #FFFFFF;
         }
         &__subscribe {
-            width: 570px;
-            height: 86px;
-            margin-left: 90px;
+            display: block;
+            width: 450px;
+            height: 156px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 20px;           
+            @media screen and (min-width: 1200px) {                    
+                    justify-content: left;
+                    width: 570px;
+                    height: 86px;
+                    margin-left: 90px;
+                }
         }
         &__p {
+            display: flex;
+            justify-content: center;
             font-family: 'Roboto';
             font-style: normal;
             color: var(--adresa-color);
             font-size: 14px;
             font-weight: 700;
-            line-height: 1.14;
+            line-height: 1.17;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 20px;
+            @media screen and (min-width: 1200px) {
+                    justify-content: left;
+                    line-height: 1.14;
+                }
         }
         &__field {
-            display: flex;
+            display: block;
+            margin: 0 auto;
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                }
         }
-        &__input {
-            display: flex;
-            align-items: center;
+        &__input {   
+            display: block;         
             padding-top: 15px;
             padding-left: 16px;
             padding-bottom: 15px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
             background: #2F303A;
             color: rgba(255, 255, 255, 0.6);
             outline: none;
@@ -94,6 +141,12 @@
             width: 358px;
             height: 50px;
             transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            @media screen and (min-width: 1200px) {                    
+                display: flex;
+                align-items: center;
+                margin-bottom: 0px;
+                    
+                }
                 &::placeholder {
                     font-family: 'Roboto';
                     font-size: 16px;
@@ -111,10 +164,20 @@
 
 .addres {
     font-style: normal;
+    
         &__list {
-            margin-top: 20px;
+            display: block;
+            margin: 20px auto;
+            @media screen and (min-width: 1200px) {
+                    margin-top: 20px;
+                }
+            
         }
         &__addres {
+            display: block;
+            padding-left: auto;
+            padding-right: auto;
+            margin: 0 auto;
             color: var(--adresa-color);
             font-size: 14px;
             font-weight: 400;
@@ -147,5 +210,8 @@
 .svg-send {
     width: 24px;
     height: 24px;
-    margin-left: 10px;
+    
+    @media screen and (min-width: 1200px) {
+            margin-left: 10px;
+        }
 }

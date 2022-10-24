@@ -1,36 +1,82 @@
 .section-studio {
     background-color: var(--footer-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
+        padding-top: 118px;
+        padding-bottom: 118px; 
+            @media screen and (min-width: 1200px) {
+                padding-top: 200px;
+                padding-bottom: 200px;
+            }
 }
 
 .overlay {
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
-            rgba(0, 0, 0, 0.4),
-            rgba(47, 48, 58, 0.4)), url(../img/main-hiro.jpg);
+                rgba(0, 0, 0, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../img/hero-mobile-1x.jpg );
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to right,
+                        rgba(0, 0, 0, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url(../img/hero-mobile-2x.jpg);
+                }
     background-repeat: no-repeat;
     background-position: cover;
-
+        @media screen and (min-width: 768px) {            
+            background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(../img/hero-tablet-1x.jpg);
+                @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                        background-image: linear-gradient(to right,
+                            rgba(0, 0, 0, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                            url(../img/hero-tablet-2x.jpg);
+                        }
+        }
+        @media screen and (min-width: 1200px) {
+            height: 600px;
+            background-image: linear-gradient(to right,
+                rgba(0, 0, 0, 0.4),
+                rgba(47, 48, 58, 0.4)), 
+                url(../img/main-hiro.jpg);
+                @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                        background-image: linear-gradient(to right,
+                                rgba(0, 0, 0, 0.4),
+                                rgba(47, 48, 58, 0.4)),
+                            url(../img/hero-desk-2x.jpg);
+                    }
+        }
 
 }
 
 .section-h1 {
     color: var(--adresa-color);
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.6;
     letter-spacing: 0.06em;
     text-align: center;
-    width: 696px;
+    width: 360px;
     padding-bottom: 30px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    text-transform: uppercase
+    text-transform: uppercase;
+        @media screen and (min-width: 1200px) {
+                font-size: 44px;
+                line-height: 1.36;
+                width: 696px;
+            }
 }
 
 .section-button {
@@ -46,13 +92,16 @@
 
     border-radius: 4px;
     border: none;
-    width: 216px;
+    width: 200px;
     height: 50px;
     align-items: center;
     justify-content: center;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @media screen and (min-width: 1200px) {
+            width: 216px;
+        }
 }
 
 .section-button:hover,
