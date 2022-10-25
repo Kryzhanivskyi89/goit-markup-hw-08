@@ -1,4 +1,6 @@
 .header {
+    display: flex;
+    
     padding-top: 24px;
     
     border-bottom: 2px solid #ECECEC;
@@ -63,13 +65,14 @@
 }
 
 .menu-toggle {
-    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
     top: 30px;
     right: 10px;
     min-height: 40px;
     min-width: 40px;
-    display: flex;
-   
+       
     margin: 0;
     padding: 0;
     background-color: transparent;

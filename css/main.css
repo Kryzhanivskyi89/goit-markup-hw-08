@@ -29,6 +29,8 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section {
@@ -175,6 +177,9 @@ img {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 24px;
   border-bottom: 2px solid #ECECEC;
 }
@@ -247,14 +252,19 @@ img {
 }
 
 .menu-toggle {
-  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   top: 30px;
   right: 10px;
   min-height: 40px;
   min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 0;
   padding: 0;
   background-color: transparent;
