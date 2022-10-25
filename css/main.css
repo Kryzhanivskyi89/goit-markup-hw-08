@@ -195,12 +195,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .header__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 1200px;
   }
 }
 .header__nav {
@@ -452,6 +447,11 @@ img {
 .contact-wraper {
   margin-left: auto;
 }
+@media screen and (min-width: 1200px) {
+  .contact-wraper {
+    margin-left: 315px;
+  }
+}
 
 @media (max-width: 767px) {
   .header__contact {
@@ -494,6 +494,12 @@ img {
 .header__list .header__contact:focus {
   color: var(--logo-color);
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__phone {
+    padding-left: 30px;
+  }
 }
 
 .icon-mail {
@@ -1035,9 +1041,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .advantage {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin: 0px;
   }
 }
@@ -1182,18 +1187,13 @@ img {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     margin: 0px;
+    width: 1200px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__items {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .team__items {
-    -ms-flex-preferred-size: calc((100% - 90px) / 4);
-        flex-basis: calc((100% - 90px) / 4);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1299,6 +1299,12 @@ img {
   .title {
     font-size: 36px;
     padding-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1325,6 +1331,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .clients__items {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 @media screen and (min-width: 1200px) {
   .clients__items {
     -ms-flex-preferred-size: calc((100% - 150px) / 6);

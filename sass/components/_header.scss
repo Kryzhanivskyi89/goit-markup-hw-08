@@ -13,8 +13,7 @@
                     height: 80px;
                     }
                     @media screen and (min-width: 1200px) {
-                    display: flex;
-                    align-items: center;                    
+                    width: 1200px;
                 }
             }
         &__nav {
@@ -231,6 +230,9 @@
 
 .contact-wraper {
     margin-left: auto;
+    @media screen and (min-width: 1200px) {
+            margin-left: 315px;
+        }
     
 }
 
@@ -263,6 +265,11 @@
 .header__list .header__contact:focus {
     color: var(--logo-color);
     fill: currentColor;
+}
+.header__phone {
+    @media screen and (min-width: 1200px) {
+            padding-left: 30px;
+        }
 }
 
 .icon-mail {
