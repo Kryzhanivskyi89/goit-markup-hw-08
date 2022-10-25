@@ -44,11 +44,14 @@
                         </li>
                     </ul>
                 </div> 
-                
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
+                        <use class="icon-menu" href="./img/icons.svg#icon-menu_burger"></use>
+                    </svg>
+                </button>
                 <div class="menu-container js-menu-container" id="mobile-menu">
                     <button class="menu-toggle js-close-menu">
                         <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
-                            
                             <use class="icon-cros" href="./img/icons.svg#icon-close_24px"></use>
                         </svg>
                     </button>
@@ -84,12 +87,7 @@
                     </ul>
                 
                 </div>
-                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
-                        <use class="icon-menu" href="./img/icons.svg#icon-menu_burger"></use>
                 
-                    </svg>
-                </button>
             </div>
         </header>
         <main>
@@ -561,6 +559,6 @@
         </footer>
        
     </body>
-    <script src="./JS/modal.js"></script>
     <script src="./JS/mobile-menu.js"></script>
+    <script src="./JS/modal.js"></script>
 </html>

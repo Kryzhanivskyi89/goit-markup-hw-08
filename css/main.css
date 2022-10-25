@@ -177,13 +177,19 @@ img {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-top: 24px;
   border-bottom: 2px solid #ECECEC;
 }
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 60px;
 }
 @media screen and (min-width: 768px) {
@@ -255,17 +261,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  top: 30px;
-  right: 10px;
   min-height: 40px;
   min-width: 40px;
-  margin: 0;
+  margin-right: 30px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;

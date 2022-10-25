@@ -1,11 +1,13 @@
 .header {
-    display: flex;
+    
     
     padding-top: 24px;
     
     border-bottom: 2px solid #ECECEC;
         &__container {
-                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 height: 60px;
                 
                     @media screen and (min-width: 768px) {
@@ -65,15 +67,10 @@
 }
 
 .menu-toggle {
-    display: flex;
-    justify-content: flex-end;
-    align-items: baseline;
-    top: 30px;
-    right: 10px;
+    display: flex; 
     min-height: 40px;
-    min-width: 40px;
-       
-    margin: 0;
+    min-width: 40px;       
+    margin-right: 30px;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
