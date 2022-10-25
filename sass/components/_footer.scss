@@ -51,8 +51,7 @@
                 }
             @media screen and (min-width: 1200px) {                    
                 margin-left: 70px;
-                }
-            
+                }            
         }
         &__list {
             display: flex;
@@ -158,20 +157,17 @@
                 &:focus {
                 border-color: #FFFFFF;
                 }
-        }
-       
+        }       
 }
 
 .addres {
-    font-style: normal;
-    
+    font-style: normal;    
         &__list {
             display: block;
             margin: 20px auto;
             @media screen and (min-width: 1200px) {
                     margin-top: 20px;
-                }
-            
+                }            
         }
         &__addres {
             display: block;
