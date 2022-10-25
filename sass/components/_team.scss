@@ -12,14 +12,16 @@
                 }
             
                 @media screen and (min-width: 1200px) {
-                    display: flex;
-                    justify-content: space-around;
-                    margin: 0px;
+                    flex-wrap: nowrap;
+                                        margin: 0px;
                 }
         }
         &__items {            
             @media screen and (min-width: 768px) {
                flex-basis: calc((100% - 30px) / 2);
+            }
+            @media screen and (min-width: 1200px) {
+               flex-basis: calc((100% - 90px) / 4);
             }
         }
         &__:not(:first-child) {
@@ -91,23 +93,19 @@
 }
 
 .title {
-   
+    display: flex;
+    justify-content: center;
     color: var(--primary-color);
         font-size: 28px;
         font-weight: 700;
         line-height: 1.17;
         letter-spacing: 0.03em;
-        padding-bottom: 30px;
-        
-            @media screen and (min-width: 768px) {                    
-                    display: flex;
-                    justify-content: center;
-                }
+        padding-bottom: 30px;        
+            
             @media screen and (min-width: 1200px) {
                     font-size: 36px;
                     padding-bottom: 50px;
-                    display: flex;
-                    justify-content: center;
+                    
             }
         
 }

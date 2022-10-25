@@ -18,9 +18,10 @@
                     padding-bottom: 60px;
                 }
         }
+        
         &__logo {
-            display: block;
-            margin: 0 auto;
+            display: flex;
+            justify-content: center;
             color: var(--logo-color);
             font-size: 26px;
             font-weight: 700;
@@ -29,8 +30,7 @@
             font-family: "Raleway", sans-serif;
             text-decoration: none;
                 @media screen and (min-width: 1200px) {
-                    display: flex;
-                    justify-content: left;                    
+                    display: inline-block;                                        
                 }
         }
         &__studio {
@@ -143,8 +143,7 @@
             @media screen and (min-width: 1200px) {                    
                 display: flex;
                 align-items: center;
-                margin-bottom: 0px;
-                    
+                margin-bottom: 0px;                    
                 }
                 &::placeholder {
                     font-family: 'Roboto';
@@ -158,6 +157,18 @@
                 border-color: #FFFFFF;
                 }
         }       
+}
+.footer__adres {
+    width: 232px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .addres {
@@ -195,6 +206,13 @@
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
+}
+.addres__items {
+    display: flex;
+    justify-content: center;
+        @media screen and (min-width: 1200px) {
+                display: inline-block;
+            }
 }
 
 .subscribe-button:hover,
