@@ -1,75 +1,113 @@
 .advantage {
-    gap: 30px;
-
+    
     @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
+            gap: 30px;
             width: 768px;
     }    
     @media screen and (min-width: 1200px) {
             flex-wrap: nowrap;
+            gap: 0px;
             margin: 0px;
+            width: 1200px;
     }
-    
-        
+            
 }
 .advantage__items {
+    @media screen and (max-width: 767px) {
+            padding-bottom: 30px;
+        }
     @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 30px) / 2);
-        }
+    }
     &:not(:first-child) {
-            @media screen and (min-width: 1200px) {
-                margin-left: 30px;
-            }
+        @media screen and (min-width: 1200px) {
+            margin-left: 30px;
         }
+    }  
+}
+
+.advantage {
     &__uvaha {
         display: inline-flex;
         background-image: url(../img/icons/uvaha.svg);
         background-color: #F5F4FA;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 30px;    
+        margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+                width: 354px;                
+            }
+        @media screen and (min-width: 1200px) {
+                width: 270px;                
+            }
     }
+
     &__punktualnist {
         display: inline-flex;
         background-image: url(../img/icons/punkt.svg);
         background-color: #F5F4FA;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+                width: 354px;                
+            }
+        @media screen and (min-width: 1200px) {
+                width: 270px;                
+            }
     }
+
     &__planuvannya {
         display: inline-flex;
         background-image: url(../img/icons/plan.svg);
         background-color: #F5F4FA;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+                width: 354px;                
+            }
+        @media screen and (min-width: 1200px) {
+                width: 270px;                
+            }
     }
+
     &__tehnologii {
         display: inline-flex;
         background-image: url(../img/icons/tehno.svg);
         background-color: #F5F4FA;
-        width: 270px;
+        width: 450px;
         height: 120px;
         background-repeat: no-repeat;
         background-position: center;
         margin-bottom: 30px;
+        @media screen and (min-width: 768px) {
+                width: 354px;                
+            }
+        @media screen and (min-width: 1200px) {
+                width: 270px;                
+            }
     }
+
     &__h3 {
         color: var(--primary-color);
         font-size: 14px;
         font-weight: 700;
         line-height: 1.17;
         letter-spacing: 0.03em;
+            @media screen and (max-width: 767px) {
+                display: flex;
+                justify-content: center;
+            }
     }
-
 }
 
 .section-p {
