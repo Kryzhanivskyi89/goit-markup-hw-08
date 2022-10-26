@@ -1,8 +1,5 @@
 .header {
-    
-    
-    padding-top: 24px;
-    
+        
     border-bottom: 2px solid #ECECEC;
         &__container {
                 display: flex;
@@ -68,6 +65,8 @@
 
 .menu-toggle {
     display: flex; 
+    align-items: center;
+    justify-content: center;
     min-height: 40px;
     min-width: 40px;       
     margin-right: 30px;
@@ -99,15 +98,22 @@
 
 .menu-container {
     position: fixed;
+    
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 796px;    
     padding-left: 40px;
     background-color: #FFFFFF;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;    
+}
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    color: #fff;
 }
 
 .menu-container.is-open {
@@ -142,6 +148,7 @@
 
 .mobile-contact-wraper {
     margin-top: 306px;
+    margin-bottom: 64px;
     
 }
 .mobile-contact-item {
@@ -176,7 +183,7 @@
 .mobile-social {
     display: flex;
     align-items: center;
-    margin-top: 64px;
+    margin-bottom: 48px;
 }
 
 .mobile-social-item:not(:first-child) {

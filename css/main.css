@@ -177,7 +177,6 @@ img {
 }
 
 .header {
-  padding-top: 24px;
   border-bottom: 2px solid #ECECEC;
 }
 .header__container {
@@ -261,6 +260,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 40px;
   min-width: 40px;
   margin-right: 30px;
@@ -297,7 +302,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 796px;
   padding-left: 40px;
   background-color: #FFFFFF;
@@ -308,6 +313,13 @@ img {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #fff;
 }
 
 .menu-container.is-open {
@@ -346,6 +358,7 @@ img {
 
 .mobile-contact-wraper {
   margin-top: 306px;
+  margin-bottom: 64px;
 }
 
 .mobile-contact-item {
@@ -394,7 +407,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 64px;
+  margin-bottom: 48px;
 }
 
 .mobile-social-item:not(:first-child) {
@@ -704,13 +717,10 @@ img {
 
 .overlay {
   max-width: 1600px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-mobile-1x.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile-1x.jpg);
   background-repeat: no-repeat;
-  background-position: cover;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
@@ -1057,7 +1067,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .advantage__items {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1078,7 +1088,7 @@ img {
   display: inline-flex;
   background-image: url(../img/icons/uvaha.svg);
   background-color: #F5F4FA;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1100,7 +1110,7 @@ img {
   display: inline-flex;
   background-image: url(../img/icons/punkt.svg);
   background-color: #F5F4FA;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1122,7 +1132,7 @@ img {
   display: inline-flex;
   background-image: url(../img/icons/plan.svg);
   background-color: #F5F4FA;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1144,7 +1154,7 @@ img {
   display: inline-flex;
   background-image: url(../img/icons/tehno.svg);
   background-color: #F5F4FA;
-  width: 450px;
+  width: 100%;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
@@ -1287,7 +1297,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 .team__p {
   color: var(--secondary-color);
@@ -1301,8 +1311,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .social {
@@ -1313,8 +1323,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  margin-top: 16px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .social__link {
   display: -webkit-box;
@@ -1377,6 +1386,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;

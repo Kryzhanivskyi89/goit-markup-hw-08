@@ -45,15 +45,30 @@
                     </ul>
                 </div> 
                 <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
+                    <svg 
+                        width="40px" 
+                        height="40px" 
+                        aria-label="перемикач мобільного меню">
                         <use class="icon-menu" href="./img/icons.svg#icon-menu_burger"></use>
                     </svg>
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd">
+                    </path>
                 </button>
                 <div class="menu-container js-menu-container" id="mobile-menu">
                     <button class="menu-toggle js-close-menu">
-                        <svg width="40px" height="40px" aria-label="перемикач мобільного меню">
+                        <svg 
+                            width="40px" 
+                            height="40px" 
+                            fill="currentColor"
+                            aria-label="перемикач мобільного меню">
                             <use class="icon-cros" href="./img/icons.svg#icon-close_24px"></use>
                         </svg>
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd">
+                        </path>
                     </button>
                     <ul class="mobile-menu">
                         <li class="mobile-menu-item"><a href="./index.html" class="mobile_page mobile_page-curent links">Студія</a></li>
@@ -101,7 +116,7 @@
                             <button type="button" class="button-close" data-modal-close></button>
                             <p class="modal-p">Залиште свої дані, ми вам передзвонимо</p>
                             
-                            <form action="" class="form">
+                            <form class="form">
                                 <div class="form__field">
                                     <label class="form__label" for="name">Ім'я</label>
                                     <div class="input-wrap">

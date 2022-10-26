@@ -10,9 +10,7 @@
 
 .overlay {
     max-width: 1600px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    
     background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -26,7 +24,7 @@
                         url(../img/hero-mobile-2x.jpg);
                 }
     background-repeat: no-repeat;
-    background-position: cover;
+    background-size: cover;
         @media screen and (min-width: 768px) {            
             background-image: linear-gradient(to right,
                 rgba(0, 0, 0, 0.4),
@@ -126,3 +124,5 @@
     opacity: 0;
     pointer-events: none;
 }
+
+
