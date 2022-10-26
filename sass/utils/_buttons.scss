@@ -17,7 +17,7 @@
 
 .button-close {
     position: relative;
-    left: 490px;
+    left: 412px;
     top: 8px;
     background-image: url(../img/icons/close-black-18dp\ \(2\)\ 1.svg);
     background-repeat: no-repeat;
@@ -29,6 +29,9 @@
     border-radius: 50%;
     cursor: pointer;
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+            left: 490px;
+        }
 }
 
 
