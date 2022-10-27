@@ -82,12 +82,20 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: rgba(0, 0, 0, 0.1);
+    
 }
 
 
 .menu-toggle .icon-cros {
-    display: none;
+    display: block;
+    fill: var(--primary-color);
 }
+
+.menu-toggle .icon-cros:hover,
+.menu-toggle .icon-cros:hover {    
+    fill: var(--logo-color);
+}
+
 .menu-toggle.is-open .icon-cros {
     display: block;
     }
