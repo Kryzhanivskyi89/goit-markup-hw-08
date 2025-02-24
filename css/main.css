@@ -727,11 +727,10 @@ img {
 }
 
 .overlay {
-  max-width: 1600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-mobile-1x.jpg);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/hero-mobile-1x.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-mobile-1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
@@ -1416,8 +1415,9 @@ img {
   .clients {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: auto;
   }
 }
